@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::redirect('/', 'urloot');
+
+Auth::routes();
+
+Route::get('urloot', 'Web\PageController@urloot')->name('urloot');
