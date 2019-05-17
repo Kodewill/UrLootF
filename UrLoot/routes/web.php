@@ -16,3 +16,7 @@ Route::redirect('/', 'urloot');
 Auth::routes();
 
 Route::get('urloot', 'Web\PageController@urloot')->name('urloot');
+Route::get('curso', 'Web\PageController@urloot')->name('subject');
+Route::get('profesor', 'Web\PageController@urloot')->name('professor
+');
+
